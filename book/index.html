@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment | Jason the Barber (Shop & Mobile Barber)</title>
+  <meta name="description" content="Book your haircut or mobile barber house call directly with Jason the Barber via Google Calendar Appointment Scheduling. Serving Deer Park, Pasadena, La Porte, and Baytown.">
+  <link rel="canonical" href="https://jasonthebarbertx.com/book/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jasonthebarbertx.com/book/">
+  <meta property="og:title" content="Book Appointment | Jason the Barber">
+  <meta property="og:description" content="Choose between in-shop cuts and mobile house calls. Real-time Google Calendar scheduling.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="../" class="brand-logo" id="bookBrandLogo">
+        <div class="barber-pole-icon" aria-hidden="true"></div>
+        <div class="brand-logo-text">
+          <span class="brand-name">JASON THE BARBER</span>
+          <span class="brand-tagline">SHOP CUTS • MOBILE CUTS</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="../" class="nav-link">Home</a>
+        <a href="../services/" class="nav-link">Services</a>
+        <a href="../mobile-barber/" class="nav-link">Mobile Barber</a>
+        <a href="../gallery/" class="nav-link">Gallery</a>
+        <a href="../about/" class="nav-link">About</a>
+        <a href="../contact/" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#shop" class="btn btn-secondary btn-sm btn-header-cta">
+          SHOP
+        </a>
+        <a href="#mobile" class="btn btn-primary btn-sm btn-header-cta">
+          MOBILE
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <a href="../" class="mobile-nav-link">Home</a>
+    <a href="../services/" class="mobile-nav-link">Services</a>
+    <a href="../mobile-barber/" class="mobile-nav-link">Mobile Barber</a>
+    <a href="../gallery/" class="mobile-nav-link">Gallery</a>
+    <a href="../about/" class="mobile-nav-link">About</a>
+    <a href="../contact/" class="mobile-nav-link">Contact</a>
+    <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="#shop" class="btn btn-secondary btn-block">AT THE SHOP</a>
+      <a href="#mobile" class="btn btn-primary btn-block">MOBILE BARBER</a>
+    </div>
+  </div>
+
+  <!-- Sticky Mobile Conversion Bar -->
+  <div class="mobile-conversion-bar" id="mobileConversionBar" aria-label="Quick Actions">
+    <div class="mobile-conversion-grid">
+      <a href="../contact/" class="mobile-bar-btn" id="mobileBarCallBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        CALL
+      </a>
+      <a href="../contact/#directions" class="mobile-bar-btn" id="mobileBarDirectionsBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+        DIRECTIONS
+      </a>
+      <a href="#mobile" class="mobile-bar-btn btn-book-action" id="mobileBarBookBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        BOOK NOW
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Booking Page Header -->
+    <section class="section-alt" style="padding: 4rem 0 3rem 0;">
+      <div class="container" style="text-align: center;">
+        <div class="section-badge">Direct Google Scheduling</div>
+        <h1>YOUR NEXT CUT STARTS HERE.</h1>
+        <p class="lead" style="max-width: 750px; margin: 0 auto;">
+          Choose where you want to get cleaned up, select your service, and book an available time directly through Jason's Google Calendar booking system.
+        </p>
+      </div>
+    </section>
+
+    <!-- Dual Choice Booking Blocks -->
+    <section class="section" id="bookingOptions">
+      <div class="container">
+        
+        <div class="booking-choice-grid">
+          
+          <!-- Block 1: AT THE SHOP -->
+          <div class="booking-card shop-card" id="shop">
+            <span class="feature-tag" style="color: var(--color-sky);">In-Shop Appointment</span>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">AT THE SHOP</h2>
+            <p>
+              Visit Jason at the chair for a dedicated one-on-one session. Relax in a clean, focused barbershop atmosphere with full razor and hot towel services.
+            </p>
+
+            <div class="booking-checklist">
+              <div class="booking-checklist-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 18px; height: 18px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Shop Appointment Checklist:
+              </div>
+              <ul style="font-size: 0.88rem; color: var(--color-text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+                <li>• Please arrive 5 minutes prior to your scheduled time.</li>
+                <li>• Clean hair free of heavy products is appreciated.</li>
+                <li>• Exact shop address and parking instructions provided upon booking confirmation.</li>
+              </ul>
+            </div>
+
+            <!-- GOOGLE SHOP APPOINTMENT SCHEDULING EMBED -->
+            <div class="booking-embed-container" id="googleShopEmbedArea">
+              <!-- If an iframe embed is provided, it renders here. Fallback button below: -->
+              <div class="barber-pole-icon" style="margin-bottom: 1rem;" aria-hidden="true"></div>
+              <h3 style="margin-bottom: 0.5rem;">GOOGLE SHOP CALENDAR</h3>
+              <p style="font-size: 0.9rem; max-width: 380px; margin-bottom: 1.5rem;">
+                Click below to view real-time available time slots and confirm your in-shop haircut on Jason's Google Calendar schedule.
+              </p>
+              <a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg btn-block" id="shopCalendarDirectBtn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                BOOK SHOP APPOINTMENT
+              </a>
+            </div>
+          </div>
+
+          <!-- Block 2: MOBILE APPOINTMENT -->
+          <div class="booking-card mobile-card" id="mobile">
+            <span class="feature-tag" style="color: var(--color-red-hover);">On-Location House Call</span>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">MOBILE BARBER</h2>
+            <p>
+              Jason comes to you throughout Deer Park, Pasadena, La Porte, Baytown, and surrounding areas. Complete barbershop experience at your residence, office, or hotel.
+            </p>
+
+            <div class="booking-checklist" style="border-color: rgba(186, 40, 52, 0.3);">
+              <div class="booking-checklist-title" style="color: var(--color-red-hover);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 18px; height: 18px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Mobile Booking Details to Provide:
+              </div>
+              <ul style="font-size: 0.88rem; color: var(--color-text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+                <li>• <strong>Service Address:</strong> Street, City (Deer Park / Pasadena / La Porte / Baytown).</li>
+                <li>• <strong>Access Info:</strong> Gate code, apartment / suite number, parking directions.</li>
+                <li>• <strong>Contact:</strong> Cell phone number for arrival text notification.</li>
+              </ul>
+            </div>
+
+            <!-- GOOGLE MOBILE APPOINTMENT SCHEDULING EMBED -->
+            <div class="booking-embed-container" id="googleMobileEmbedArea">
+              <!-- If an iframe embed is provided, it renders here. Fallback button below: -->
+              <div class="barber-pole-icon" style="margin-bottom: 1rem;" aria-hidden="true"></div>
+              <h3 style="margin-bottom: 0.5rem;">GOOGLE MOBILE CALENDAR</h3>
+              <p style="font-size: 0.9rem; max-width: 380px; margin-bottom: 1.5rem;">
+                Select an open time slot on Jason's mobile Google appointment schedule with built-in travel buffer time.
+              </p>
+              <a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg btn-block" id="mobileCalendarDirectBtn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                BOOK MOBILE APPOINTMENT
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Need Immediate Assistance / Questions -->
+    <section class="section section-alt" id="bookingAssistance">
+      <div class="container container-narrow" style="text-align: center;">
+        <h3>NEED ASSISTANCE OR A CUSTOM GROUP QUOTE?</h3>
+        <p style="margin-bottom: 1.5rem;">
+          For same-day requests, wedding parties, corporate grooming days, or inquiries outside our standard radius, reach out to Jason directly.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="../contact/" class="btn btn-outline">CONTACT & PHONE INFO</a>
+          <a href="../mobile-barber/" class="btn btn-secondary">VIEW SERVICE RADIUS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="barber-stripe-bar" aria-hidden="true"></div>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-logo" style="margin-bottom: 1rem;">
+              <div class="barber-pole-icon" aria-hidden="true"></div>
+              <div class="brand-logo-text">
+                <span class="brand-name">JASON THE BARBER</span>
+                <span class="brand-tagline">DEER PARK • PASADENA • LA PORTE • BAYTOWN</span>
+              </div>
+            </div>
+            <p class="footer-brand-desc">
+              Shop cuts. Mobile cuts. Your schedule. Professional barber services tailored for East Harris County and surrounding communities.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Navigation</h4>
+            <div class="footer-links">
+              <a href="../">Home</a>
+              <a href="../services/">All Services</a>
+              <a href="../mobile-barber/">Mobile Barbering</a>
+              <a href="../gallery/">Haircut Portfolio</a>
+              <a href="../about/">About Jason</a>
+              <a href="../contact/">Contact & Location</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Service Areas</h4>
+            <div class="footer-links">
+              <a href="../mobile-barber/#deer-park">Deer Park, TX</a>
+              <a href="../mobile-barber/#pasadena">Pasadena, TX</a>
+              <a href="../mobile-barber/#la-porte">La Porte, TX</a>
+              <a href="../mobile-barber/#baytown">Baytown, TX</a>
+              <a href="../mobile-barber/">East Harris County</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Book Appointment</h4>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+              Select shop or mobile booking to view live Google Calendar availability.
+            </p>
+            <a href="#shop" class="btn btn-primary btn-block">BOOK WITH JASON</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <div>&copy; <span class="current-year">2026</span> Jason the Barber. All Rights Reserved.</div>
+        <div style="font-family: var(--font-serif); font-style: italic; color: var(--color-gold);">
+          Romans 12:21 • "Be not overcome of evil, but overcome evil with good."
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Jason the Barber",
+  "description": "Professional in-shop and mobile barber services for Deer Park, Pasadena, La Porte, and Baytown, Texas. Book appointments or house calls directly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

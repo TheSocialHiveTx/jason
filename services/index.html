@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Services & Pricing | Jason the Barber (Deer Park, Pasadena, La Porte, Baytown)</title>
+  <meta name="description" content="Explore in-shop and mobile barber services by Jason the Barber. Men's haircuts, beard trims, skin fades, kids cuts, and on-location mobile grooming.">
+  <link rel="canonical" href="https://jasonthebarbertx.com/services/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jasonthebarbertx.com/services/">
+  <meta property="og:title" content="Barber Services & Pricing | Jason the Barber">
+  <meta property="og:description" content="View complete in-shop and mobile barber service options. Serving Deer Park, Pasadena, La Porte, and Baytown.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500;700&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <!-- Schema.org Service Catalog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Jason the Barber - Services",
+    "url": "https://jasonthebarbertx.com/services/",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Full Barber Service Menu",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "In-Shop Men's Haircut",
+            "description": "Custom precision haircut, razor edge-up, and styling."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "In-Shop Haircut + Beard Sculpt",
+            "description": "Full precision cut combined with beard shaping and hot towel razor finish."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile Haircut House Call",
+            "description": "On-location mobile haircut at approved residences, offices, or hotels."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile Family / Group Cuts",
+            "description": "Multi-client on-location barber grooming package."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="../" class="brand-logo" id="servicesBrandLogo">
+        <div class="barber-pole-icon" aria-hidden="true"></div>
+        <div class="brand-logo-text">
+          <span class="brand-name">JASON THE BARBER</span>
+          <span class="brand-tagline">SHOP CUTS • MOBILE CUTS</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="../" class="nav-link">Home</a>
+        <a href="./" class="nav-link active">Services</a>
+        <a href="../mobile-barber/" class="nav-link">Mobile Barber</a>
+        <a href="../gallery/" class="nav-link">Gallery</a>
+        <a href="../about/" class="nav-link">About</a>
+        <a href="../contact/" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../book/" class="btn btn-primary btn-sm btn-header-cta" id="headerBookNavBtn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          BOOK NOW
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <a href="../" class="mobile-nav-link">Home</a>
+    <a href="./" class="mobile-nav-link active">Services</a>
+    <a href="../mobile-barber/" class="mobile-nav-link">Mobile Barber</a>
+    <a href="../gallery/" class="mobile-nav-link">Gallery</a>
+    <a href="../about/" class="mobile-nav-link">About</a>
+    <a href="../contact/" class="mobile-nav-link">Contact</a>
+    <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="../book/" class="btn btn-primary btn-block">BOOK SHOP CUT</a>
+      <a href="../book/#mobile" class="btn btn-gold btn-block">BOOK MOBILE BARBER</a>
+    </div>
+  </div>
+
+  <!-- Sticky Mobile Conversion Bar -->
+  <div class="mobile-conversion-bar" id="mobileConversionBar" aria-label="Quick Actions">
+    <div class="mobile-conversion-grid">
+      <a href="../contact/" class="mobile-bar-btn" id="mobileBarCallBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        CALL
+      </a>
+      <a href="../contact/#directions" class="mobile-bar-btn" id="mobileBarDirectionsBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+        DIRECTIONS
+      </a>
+      <a href="../book/" class="mobile-bar-btn btn-book-action" id="mobileBarBookBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        BOOK NOW
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header Banner -->
+    <section class="section-alt" style="padding: 4rem 0 3rem 0;">
+      <div class="container text-center" style="text-align: center;">
+        <div class="section-badge">Service Menu</div>
+        <h1>BARBER SERVICES & BOOKING</h1>
+        <p class="lead" style="max-width: 700px; margin: 0 auto;">
+          Choose between traditional in-shop barbering or personalized mobile house calls across Deer Park, Pasadena, La Porte, and Baytown.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 1: IN-SHOP SERVICES -->
+    <section class="section" id="inShopSection">
+      <div class="container">
+        <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 2.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <span class="feature-tag" style="color: var(--color-sky); font-size: 1rem;">In-Shop Appointments</span>
+          </div>
+          <h2>TRADITIONAL SHOP CUTS & GROOMING</h2>
+          <p class="section-subtitle">
+            One-on-one appointments at the chair. Clean clippers, sterile razors, and relaxed atmosphere.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Service 1: Haircut -->
+          <div class="card" id="shopServiceHaircut">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg>
+            </div>
+            <h3 class="card-title">Haircut</h3>
+            <p>Custom precision haircut tailored to your head shape, style preference, and hair texture. Finished with clean neck shave, razor edge-up, and styling product.</p>
+            <div class="card-meta">
+              <span class="card-price">Shop Service</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                30-40 min
+              </span>
+            </div>
+            <a href="../book/#shop" class="btn btn-secondary btn-block">BOOK SHOP HAIRCUT</a>
+          </div>
+
+          <!-- Service 2: Haircut + Beard Combo -->
+          <div class="card card-highlight" id="shopServiceCombo">
+            <div class="card-badge">Top Pick</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h3 class="card-title">Haircut + Beard Detail</h3>
+            <p>The complete look. Full precision haircut combined with expert beard trimming, mustache sculpt, straight razor cheek and neck lines, and nourishing beard finish.</p>
+            <div class="card-meta">
+              <span class="card-price">Shop Service</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                45-60 min
+              </span>
+            </div>
+            <a href="../book/#shop" class="btn btn-primary btn-block">BOOK COMBO</a>
+          </div>
+
+          <!-- Service 3: Beard Sculpt & Hot Towel -->
+          <div class="card" id="shopServiceBeard">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h3 class="card-title">Beard Sculpt & Shave</h3>
+            <p>Dedicated beard shaping, symmetry correction, length debulking, warm hot towel preparation, and crisp straight-edge razor line definition.</p>
+            <div class="card-meta">
+              <span class="card-price">Shop Service</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                25-30 min
+              </span>
+            </div>
+            <a href="../book/#shop" class="btn btn-secondary btn-block">BOOK BEARD SERVICE</a>
+          </div>
+
+          <!-- Service 4: Kids Cut -->
+          <div class="card" id="shopServiceKids">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+            </div>
+            <h3 class="card-title">Kids Cut (12 & Under)</h3>
+            <p>Patient, clean, and sharp styling for young men. Keeps them looking fresh for school, photos, and family events in a friendly chair.</p>
+            <div class="card-meta">
+              <span class="card-price">Shop Service</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                25-30 min
+              </span>
+            </div>
+            <a href="../book/#shop" class="btn btn-secondary btn-block">BOOK KIDS CUT</a>
+          </div>
+
+          <!-- Service 5: Senior Cut -->
+          <div class="card" id="shopServiceSenior">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 class="card-title">Senior Classic Cut</h3>
+            <p>Traditional clean scissor or clipper taper, eyebrow trim, ear hairline cleanup, and relaxed conversation for seniors (60+).</p>
+            <div class="card-meta">
+              <span class="card-price">Shop Service</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                25-30 min
+              </span>
+            </div>
+            <a href="../book/#shop" class="btn btn-secondary btn-block">BOOK SENIOR CUT</a>
+          </div>
+
+          <!-- Service 6: Razor Line-Up / Edge-Up -->
+          <div class="card" id="shopServiceEdgeUp">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+            </div>
+            <h3 class="card-title">Razor Edge-Up & Line</h3>
+            <p>Keep your haircut crisp between full haircuts. Precision razor detailing of front hairline, temples, sideburns, and neckline.</p>
+            <div class="card-meta">
+              <span class="card-price">Shop Service</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                15-20 min
+              </span>
+            </div>
+            <a href="../book/#shop" class="btn btn-secondary btn-block">BOOK EDGE-UP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MOBILE SERVICES -->
+    <section class="section section-alt" id="mobile">
+      <div class="container">
+        <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 2.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <span class="feature-tag" style="color: var(--color-red-hover); font-size: 1rem;">Mobile Barbering House Calls</span>
+          </div>
+          <h2>ON-LOCATION MOBILE BARBER SERVICES</h2>
+          <p class="section-subtitle">
+            Jason brings the full barber setup to your home, office, hotel, or private venue in Deer Park, Pasadena, La Porte, and Baytown.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Mobile Service 1: Mobile Haircut -->
+          <div class="card card-highlight" id="mobileServiceHaircut">
+            <div class="card-badge">Popular Mobile</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <h3 class="card-title">Mobile Haircut</h3>
+            <p>Single client on-location service. Jason arrives with full portable equipment, drop mat, professional lighting, and sanitary clippers.</p>
+            <div class="card-meta">
+              <span class="card-price">Mobile Call</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Appointment + Travel
+              </span>
+            </div>
+            <a href="../book/#mobile" class="btn btn-gold btn-block">BOOK MOBILE CUT</a>
+          </div>
+
+          <!-- Mobile Service 2: Mobile Cut + Beard -->
+          <div class="card" id="mobileServiceCombo">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h3 class="card-title">Mobile Haircut + Beard</h3>
+            <p>The VIP treatment at your doorstep. Custom haircut combined with full beard trim, sculpting, and razor detailing in your space.</p>
+            <div class="card-meta">
+              <span class="card-price">Mobile Call</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Appointment + Travel
+              </span>
+            </div>
+            <a href="../book/#mobile" class="btn btn-primary btn-block">BOOK MOBILE COMBO</a>
+          </div>
+
+          <!-- Mobile Service 3: Family / Multi-Cut Package -->
+          <div class="card" id="mobileServiceFamily">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="card-title">Family / Multi-Cut Package</h3>
+            <p>Ideal for fathers & sons, brothers, or households. 2 to 4 back-to-back haircuts during one single house call visit.</p>
+            <div class="card-meta">
+              <span class="card-price">Group Booking</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Multiple Cuts
+              </span>
+            </div>
+            <a href="../book/#mobile" class="btn btn-secondary btn-block">BOOK FAMILY VISIT</a>
+          </div>
+
+          <!-- Mobile Service 4: Corporate & Office Grooming -->
+          <div class="card" id="mobileServiceCorporate">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <h3 class="card-title">Office & Corporate Grooming</h3>
+            <p>Half-day or full-day on-site corporate booking. Perfect for company photo days, executive grooming, or employee appreciation perks.</p>
+            <div class="card-meta">
+              <span class="card-price">Custom Quote</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Half / Full Day
+              </span>
+            </div>
+            <a href="../contact/" class="btn btn-outline btn-block">INQUIRE FOR OFFICE</a>
+          </div>
+
+          <!-- Mobile Service 5: Wedding & Groom Party -->
+          <div class="card" id="mobileServiceWedding">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <h3 class="card-title">Wedding Party & Events</h3>
+            <p>Full wedding morning barber service for groom, best man, and groomsmen at the venue, hotel suite, or residence before the big day.</p>
+            <div class="card-meta">
+              <span class="card-price">Event Package</span>
+              <span class="card-duration">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Custom Event
+              </span>
+            </div>
+            <a href="../contact/" class="btn btn-outline btn-block">BOOK EVENT SERVICE</a>
+          </div>
+
+          <!-- Mobile Info Box -->
+          <div class="card" style="background: rgba(31, 87, 130, 0.15); border-color: rgba(31, 87, 130, 0.4);" id="mobileServiceNotes">
+            <h3 class="card-title text-gold">Mobile Service Notes</h3>
+            <ul style="display: flex; flex-direction: column; gap: 0.65rem; margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-muted);">
+              <li>• Mobile pricing accounts for dedicated travel time and on-site setup.</li>
+              <li>• Clean, sanitary work area with professional floor mat and vacuum.</li>
+              <li>• Serving Deer Park, Pasadena, La Porte, Baytown & surrounding areas.</li>
+              <li>• Bookings confirmed through Google Calendar.</li>
+            </ul>
+            <div style="margin-top: 1.5rem;">
+              <a href="../mobile-barber/" class="btn btn-secondary btn-sm btn-block">HOW MOBILE WORKS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking CTA Banner -->
+    <section class="section" style="text-align: center;">
+      <div class="container container-narrow">
+        <h2>SELECT YOUR PREFERRED APPOINTMENT</h2>
+        <p class="lead" style="margin-bottom: 2rem;">
+          Google Calendar provides immediate confirmation and verified appointment scheduling.
+        </p>
+        <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
+          <a href="../book/#shop" class="btn btn-secondary btn-lg">BOOK IN-SHOP</a>
+          <a href="../book/#mobile" class="btn btn-primary btn-lg">BOOK MOBILE APPOINTMENT</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="barber-stripe-bar" aria-hidden="true"></div>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-logo" style="margin-bottom: 1rem;">
+              <div class="barber-pole-icon" aria-hidden="true"></div>
+              <div class="brand-logo-text">
+                <span class="brand-name">JASON THE BARBER</span>
+                <span class="brand-tagline">DEER PARK • PASADENA • LA PORTE • BAYTOWN</span>
+              </div>
+            </div>
+            <p class="footer-brand-desc">
+              Shop cuts. Mobile cuts. Your schedule. Professional barber services tailored for East Harris County and surrounding communities.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Navigation</h4>
+            <div class="footer-links">
+              <a href="../">Home</a>
+              <a href="./">All Services</a>
+              <a href="../mobile-barber/">Mobile Barbering</a>
+              <a href="../gallery/">Haircut Portfolio</a>
+              <a href="../about/">About Jason</a>
+              <a href="../contact/">Contact & Location</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Service Areas</h4>
+            <div class="footer-links">
+              <a href="../mobile-barber/#deer-park">Deer Park, TX</a>
+              <a href="../mobile-barber/#pasadena">Pasadena, TX</a>
+              <a href="../mobile-barber/#la-porte">La Porte, TX</a>
+              <a href="../mobile-barber/#baytown">Baytown, TX</a>
+              <a href="../mobile-barber/">East Harris County</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Book Appointment</h4>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+              Select shop or mobile booking to view live Google Calendar availability.
+            </p>
+            <a href="../book/" class="btn btn-primary btn-block">BOOK WITH JASON</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <div>&copy; <span class="current-year">2026</span> Jason the Barber. All Rights Reserved.</div>
+        <div style="font-family: var(--font-serif); font-style: italic; color: var(--color-gold);">
+          Romans 12:21 • "Be not overcome of evil, but overcome evil with good."
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
